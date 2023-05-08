@@ -1,0 +1,39 @@
+package task2;
+import java.util.*;
+public class battingAverage {
+
+	public static void main(String[] args) {
+		
+		int avg;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter the number of matches played: ");
+		int matches = sc.nextInt();
+		
+		System.out.println("Enter the number of innings batted: ");
+		int innings = sc.nextInt();
+		
+		if(innings <= matches) {
+			System.out.println("Enter the number innings batted correctly");
+		}
+		
+		System.out.println("Enter number of times not out: ");
+		int notout = sc.nextInt();
+		
+		if(notout<=innings) {
+			System.out.println("Enter the number times became notout correctly");
+		}
+		
+		System.out.println("Enter runs scored");
+		int runs = sc.nextInt();
+		
+		if(innings==notout)
+		     avg=runs;
+		     else
+		     avg=runs/(innings-notout);
+		 
+		     System.out.println("Batting average= "+avg);
+
+	}
+
+}
