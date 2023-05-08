@@ -1,0 +1,19 @@
+package task2;
+import java.util.*;
+public class power {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter base: ");
+		double i = sc.nextDouble();
+		
+		System.out.println("Enter exponent: ");
+		double j = sc.nextDouble();
+		
+		System.out.println("The ans is: "+ Math.pow(i, j));
+
+	}
+
+}
