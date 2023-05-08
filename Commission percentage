@@ -1,0 +1,21 @@
+package task2;
+import java.util.*;
+public class commissionPercentage {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter amount: ");
+		double amount = sc.nextDouble();
+		
+		System.out.println("Enter commission percentage: ");
+		double cp = sc.nextDouble();
+		
+		double ans = (cp/100)*amount;
+		System.out.println("Commission amount is: "+ans);
+
+	}
+
+}
