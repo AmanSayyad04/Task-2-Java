@@ -1,0 +1,31 @@
+package task2;
+import java.util.*;
+public class cgpa {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("Enter marks of first subject: ");
+		double a = sc.nextDouble();
+		
+		System.out.println("Enter marks of second subject: ");
+		double b = sc.nextDouble();
+		
+		System.out.println("Enter marks of third subject: ");
+		double c = sc.nextDouble();
+		
+		System.out.println("Enter marks of fourth subject: ");
+		double d = sc.nextDouble();
+		
+		System.out.println("Enter marks of fifth subject: ");
+		double e = sc.nextDouble();
+		
+		double cgpa = (a+b+c+d+e)/(5.0);
+		
+		double ans = (float)(9.5 * (cgpa));
+		System.out.println("CGPA Percentage is: "+ ans);
+
+	}
+
+}
